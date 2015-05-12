@@ -1,7 +1,7 @@
 # liferay-grunt
 An example of a grunt build file for a current Liferay 6.2 project. 
 
-#### Includes:
+#### Included in this gruntfile:
 * File sync to Tomcat on save
 * Javascript concatenation and uglification
 * SVG optimization and spriting
