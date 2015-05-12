@@ -8,4 +8,11 @@ Includes:
 * Version based cachebreaker 
 * Watch task to trigger SASS recompile
 
-#### If utilizing the grunt watch task, edit the tomcatTheme directory to point to your theme's directory in Tomcat
+To use this grunt file with liferay:
+* Copy the gruntfile and package.json file to the src root of your theme directory.
+* Type 'npm install'
+* Type 'grunt'
+* If utilizing the 'grunt watch' task, edit the tomcatTheme directory to point to your theme's directory in Tomcat
+
+
+We are using this in conjuction with a Maven frontend build task. If you have any questions, feel free to reach out.
