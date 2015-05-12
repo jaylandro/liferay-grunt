@@ -1,14 +1,14 @@
 # liferay-grunt
 An example of a grunt build file for a current Liferay 6.2 project. 
 
-Includes:
+#### Includes:
 * File sync to Tomcat on save
 * Javascript concatenation and uglification
 * SVG optimization and spriting
 * Version based cachebreaker 
 * Watch task to trigger SASS recompile
 
-To use this grunt file with liferay:
+#### To use this grunt file with liferay:
 * Copy the gruntfile and package.json file to the src root of your theme directory.
 * Type 'npm install'
 * Type 'grunt'
