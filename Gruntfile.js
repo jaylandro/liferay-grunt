@@ -13,7 +13,8 @@ module.exports = function(grunt) {
     pkg: globalConfig.pkg,
 
     /**
-     * Concatinates and minifies all JavaScript files into global.min.js
+     * Concatenates and minifies all JavaScript files into global.min.js
+     * Also creates a global variable 'buildVersion' to be used in error loggging and auditing
      * 
      */
 
@@ -67,6 +68,8 @@ module.exports = function(grunt) {
 
     /**
      * Builds and optimizes SVG sprites based on individual SVGs located in svg-raw
+     * Also outputs a sass file for background positioning
+     * 
      */
     
     svg_sprite: {
@@ -94,7 +97,7 @@ module.exports = function(grunt) {
 
     /**
      * Used in the watch task to synchronize updated files from the src home directory to the tomcat 
-     * serer directory
+     * server directory
      * 
      */
 
@@ -113,7 +116,8 @@ module.exports = function(grunt) {
 
     /**
      * Running grunt watch from the command line will allow frontend developers to see live changes
-     * Installing the livereload plugin will autorefresh the browser on file updates
+     * Installing the livereload plugin in the browser will autorefresh on file updates
+     * 
      */
 
     watch: {
